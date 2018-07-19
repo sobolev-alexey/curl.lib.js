@@ -163,7 +163,7 @@ window.curl = module.exports = {
   pow,
   prepare: PearlDiver.prepare,
   setOffset: (o) => {pdInstance.offset = o},
-  interrupt: () => interrupt(pdInstance),
+  interrupt: () => PearlDiver.interrupt(pdInstance),
   resume: () => PearlDiver.doNext(pdInstance),
   remove: () => pdInstance.queue.unshift(),
   //getHashRows: (c) => c(PearlDiver.getHashCount()),

@@ -141,6 +141,7 @@ const prepare = (transactionTrytes, minWeightMagnitude) => {
 
 module.exports = {
   instance: PearlDiverInstance,
+  interrupt,
   offsetState,
   prepare,
   search,
